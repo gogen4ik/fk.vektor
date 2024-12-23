@@ -25,20 +25,26 @@ header {
   border-radius: 8px 8px 0 0; /* Закругленные углы сверху */
 }
 
-nav {
-  margin-top: 20px; /* Отступ сверху для навигации */
-}
-
+/* Пример стилей для навигационного меню */
 nav ul {
-  list-style: none;
-  padding: 0;
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
 }
 
-nav li {
-  display: inline;
-  margin-right: 20px;
+nav ul li {
+  display: inline-block; /* Расположение в одну строку */
+  margin: 0 15px; /* Отступы между кнопками */
+  padding: 10px 20px; /* Внутренние отступы для кнопок */
+  cursor: pointer; /* Курсор указатель */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход для фона и тени */
+  border-radius: 5px; /* Скругление углов */
 }
 
+nav ul li:hover {
+  background-color: #22246f; /* Цвет фона при наведении */
+  color: white; /* Цвет текста при наведении */
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3); /* Внутренняя тень при наведении */
+}
 
 
 nav a {
@@ -46,13 +52,8 @@ nav a {
   text-decoration: none; /* Убираем подчеркивание */
   padding: 10px 15px; /* Добавляем отступы вокруг текста */
   border-radius: 4px; /* Закругленные углы */
-  transition: background-color 0.3s; /* Плавный переход для фона при наведении */
+  transition: background-color 0.2s; /* Плавный переход для фона при наведении */
 }
-
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Легкое подсвечивание фона при наведении */
-}
-
 
 main {
   padding: 20px;
