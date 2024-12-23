@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html {
+  overflow-y: scroll; /* Всегда отображать вертикальную полосу прокрутки */
+}
+
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f5f5f5; /* Светлый фон для контраста */
@@ -54,6 +59,125 @@ nav a {
   border-radius: 4px; /* Закругленные углы */
   transition: background-color 0.2s; /* Плавный переход для фона при наведении */
 }
+
+.team-list {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем отступы */
+}
+
+.team-member {
+  display: flex; /* Используем flexbox для размещения изображений и текста */
+  align-items: center; /* Выравнивание по центру */
+  margin: 10px 0; /* Отступы между участниками команды */
+  padding: 10px;
+  border: 1px solid #ddd; /* Рамка вокруг игрока */
+  border-radius: 5px; /* Скругление углов */
+  transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+.team-member:hover {
+  background-color: #f5f5f5; /* Цвет фона при наведении */
+}
+
+.player-image {
+  width: 80px; /* Ширина изображения */
+
+  height: 80px; /* Высота изображения */
+  border-radius: 50%; /* Круглая форма изображения */
+  margin-right: 15px; /* Отступ между изображением и текстом */
+}
+
+.player-info {
+  flex-grow: 1; /* Разрешаем текстовой части занимать оставшуюся ширину */
+}
+
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Пространство между фильтрами */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.search-filters label {
+  display: flex;
+  flex-direction: column; /* Подписи под полями ввода */
+  font-weight: bold; /* Жирный шрифт для подписи */
+}
+
+.search-filters input,
+.search-filters select {
+  padding: 8px; /* Отступ внутри поля */
+  border: 1px solid #ddd; /* Рамка around the input */
+  border-radius: 4px; /* Скругленные углы */
+  margin-top: 5px; /* Отступ сверху для эстетику */
+  width: 150px; /* Ширина input и select */
+  transition: border-color 0.3s; /* Плавный переход цвета рамки */
+}
+
+.search-filters input:focus,
+.search-filters select:focus {
+  border-color: #007bff; /* Цвет рамки при фокусе */
+  outline: none; /* Убираем стандартный стиль фокуса */
+}
+
+.sort-button {
+  background-color: #007bff; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border: none; /* Без рамки */
+  border-radius: 4px; /* Скругленные углы */
+  padding: 8px 12px; /* Отступы внутри кнопки */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+  font-size: 14px; /* Размер шрифта */
+}
+
+.sort-button:hover {
+  background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+.sort-button:focus {
+  outline: none; /* Убираем стандартный стиль фокуса */
+}
+
+.photo-album {
+  padding: 0px;
+}
+
+.project-title {
+  cursor: pointer;
+  font-size: 20px;
+  color: #22246f; /* Укажите желаемый цвет для заголовков */
+  padding: 5px; /* Добавляем padding для плавности */
+  box-sizing: border-box; /* Учитываем padding в размерах */
+  transition: transform 0.2s ease; /* Добавить анимацию сразу */
+}
+
+.project-title:hover {
+  transform: scale(1.02); /* Увеличиваем размер при наведении */
+  color: #22246f; /* Укажите желаемый цвет для заголовков */
+}
+
+
+
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Сетка для фотографий */
+  gap: 10px; /* Промежуток между фото */
+  margin-top: 20px; /* Отступ для более четкого разделения */
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.2s ease; /* Плавное изменение при наведении */
+}
+
+.photo-item img:hover {
+  transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
 
 main {
   padding: 20px;
