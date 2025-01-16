@@ -575,7 +575,7 @@ const hidePlayerInfo = () => {
     return (
         <div className="container">
             <header>
-                <h1>Футбольная команда "ВЕКТОР-НЕДВИЖИМОСТЬ"</h1>
+                <h1>ФК "ВЕКТОР-НЕДВИЖИМОСТЬ"</h1>
                 <nav>
                     <ul>
                         <li onClick={() => setActiveSection('news')}>Новости</li>

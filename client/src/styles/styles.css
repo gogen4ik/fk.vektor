@@ -20,6 +20,7 @@ body {
   background-color: white; /* Белый фон для контейнера */
   border-radius: 8px; /* Закругленные углы */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для визуального эффекта */
+  text-align: center;
 }
 
 header {
