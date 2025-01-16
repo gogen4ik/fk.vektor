@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fk.vektor/static/css/main.b9c5e567.css",
+    "main.css": "/fk.vektor/static/css/main.8ce54705.css",
     "main.js": "/fk.vektor/static/js/main.51144864.js",
     "static/media/photo3.jpg": "/fk.vektor/static/media/photo3.78dc918ea0359cd491f4.jpg",
     "static/media/photo30.jpg": "/fk.vektor/static/media/photo30.7a00d58b3f0dae46f58d.jpg",
@@ -40,11 +40,11 @@
     "static/media/slick.ttf": "/fk.vektor/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/fk.vektor/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/fk.vektor/index.html",
-    "main.b9c5e567.css.map": "/fk.vektor/static/css/main.b9c5e567.css.map",
+    "main.8ce54705.css.map": "/fk.vektor/static/css/main.8ce54705.css.map",
     "main.51144864.js.map": "/fk.vektor/static/js/main.51144864.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9c5e567.css",
+    "static/css/main.8ce54705.css",
     "static/js/main.51144864.js"
   ]
 }
